@@ -19,6 +19,6 @@ expect(res.status).toBe(200);
 
 it('should return JSON response for / route', async () => {
 const res = await request(app).get('/');
-expect(res.body).toHaveProperty('message', 'Broken Test');
+expect(res.body).toHaveProperty('message', 'Hello from the backend!');
 });
 });
